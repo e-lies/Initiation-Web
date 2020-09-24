@@ -27,47 +27,7 @@
         </tr>
         <!-- Le reste sera généré dynamiquement par Javascript -->
     </table>
-    <script type="text/javascript">
-        const tab = [
-            {
-                logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b9/Logo_Manchester_United.svg/1200px-Logo_Manchester_United.svg.png",
-                team: "Manchester United",
-                nation: "Angleterre"
-            },
-            {
-                logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/9/9f/Logo_Juventus.svg/1200px-Logo_Juventus.svg.png",
-                team: "Juventus Turin",
-                nation: "Italie"
-            },
-            {
-                logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/a/a1/Logo_FC_Barcelona.svg/1200px-Logo_FC_Barcelona.svg.png",
-                team: "FC Barcelone",
-                nation: "Espagne"
-            }
-        ];
-        let i = 0;
-        //Pour chaque élément de la liste, on va créer une ligne dans le tableau "équipes"
-        for(i = 0; i < tab.length; i++){
-            //Créer un élément ligne de tableau dynamique (fabriqué avec des variables)
-            //La méthode .innerHTML donne le contenu HTML de l'élément identifier
-            document.getElementById("tableau").innerHTML = document.getElementById("tableau").innerHTML +
-            `<tr class='row'>
-                <td class="cell">
-                    `+ parseInt(i+1) + `
-                </td>
-                <td class="logo">
-                    <img width="60px" height="60px" alt="`+tab[i]['team']+`" src="`+tab[i]['logo']+`" />
-                </td>
-                <td class="cell">
-                    `+tab[i]['team']+`
-                </td>
-                <td class="cell">
-                    `+tab[i]['nation']+`
-                </td>
-            </tr>`;
-            //Les backticks `` permettent d'écrire des string sur plusieurs lignes
-        }
-    </script>
+   
     <script src="Filtre.js" > </script>
 </body>
 </html>

@@ -23,10 +23,7 @@ const tab = [
 ];
 //Exécuter la fonction au chargement de la page pour construire le tableau
 changeFiltre();
-document.body.addEventListener("load",function(){
-    alert("load")
-    changeFiltre()
-})
+
 document.getElementById("filtre").addEventListener("keyup",function(){
     changeFiltre()
 })
