@@ -1,0 +1,6 @@
+#matches {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+}
+/* styles avec media queries... */

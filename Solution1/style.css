@@ -1,0 +1,17 @@
+img {
+    border-radius: 50%;
+    margin: 20px;
+    border: 2px solid darkgrey
+}
+#tableau {
+    width: 100%;
+    border: 2px solid darkgrey;
+}
+#titles {
+    border: 3px solid black;
+    height: 60px;
+    background-color: darkgray;
+}
+.row {
+    text-align: center;
+}
