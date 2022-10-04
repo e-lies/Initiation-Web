@@ -3,7 +3,11 @@ img {
     margin: 20px;
     border: 2px solid darkgrey
 }
-#tableau {
+#filtre {
+    height: 32px;
+    margin: 20px;
+}
+#clubsList {
     width: 100%;
     border: 2px solid darkgrey;
 }
@@ -13,11 +17,8 @@ img {
     background-color: darkgray;
 }
 .row {
-    text-align: right;
+    text-align: center;
 }
-td[ranking='1'] {
-    color: gold
-}
-.row,.italy {
-    font-style: italic;
+.stretch {
+    margin: 8px
 }

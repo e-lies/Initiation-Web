@@ -1,13 +1,16 @@
 #matches {
     display: flex;
     flex-direction: column;
-    max-width: 750px;
+    /*max-width: 750px;*/
 }
 @media screen and (min-width: 601px) {
     .matche  {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: gray;
     }
 }
 @media screen and (max-width: 600px) {
@@ -15,6 +18,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+    .score {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 150px;
     }
 }
 img {

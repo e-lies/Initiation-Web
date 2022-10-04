@@ -53,7 +53,7 @@
         for(i = 0; i < tab.length; i++){
             //Créer un élément ligne de tableau dynamique (fabriqué avec des variables)
             //La méthode .innerHTML donne le contenu HTML de l'élément identifier
-            document.getElementById("tableau").innerHTML = document.getElementById("tableau").innerHTML +
+            document.querySelector("#tableau").innerHTML = document.querySelector("#tableau").innerHTML +
             `<tr class='row'>
                 <td class="cell">
                     `+ parseInt(i+1) + `

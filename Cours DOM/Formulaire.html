@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to Json</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <form action="/" method="get" style="display: flex; flex-direction: column; height: 300; justify-content: space-around; justify-items: stretch;">
+        <label class="stretch"> Nom:
+            <input type="text" name="nom" id="nom">
+        </label>
+        <label class="stretch"> Age:
+            <input type="number" name="age" id="age">
+        </label>
+        <label class="stretch">Genre:
+        <select name="gender" id="gender">à
+            <option value="male">Homme</option>
+            <option value="female">Femme</option>
+        </select>
+    </label>
+    </form>
+    <button class="stretch" id="toJson">Mettre en JSON</button>
+    <p id="text"></p>
+</body>
+</html>
+<script src="Formulaire.js"></script>

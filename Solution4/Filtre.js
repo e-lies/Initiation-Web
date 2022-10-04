@@ -22,14 +22,25 @@ const tab = [
     }
 ];
 //Exécuter la fonction au chargement de la page pour construire le tableau
-changeFiltre();
+var f = document.querySelector("#filtre")
+changeFiltre(f);
 
-document.getElementById("filtre").addEventListener("keyup",function(){
-    changeFiltre()
-})
-function changeFiltre(){
+document.querySelector("#filtre").addEventListener("keyup",
+    function(event){
+        console.log(event)
+        changeFiltre(event.target)
+    }
+)
+
+document.querySelector(".logo").addEventListener("click",
+    function(event){
+        alert(event.target.getAttribute("val"))
+    }
+)
+
+function changeFiltre(target){
     //Affecter la valeur de l'input à la variable filtre
-    filtre = document.getElementById('filtre').value;
+    filtre = target.value;
     var i = 0;
     var rows = `<tr id="titles" class="row">
         <th class="titre">
@@ -55,7 +66,7 @@ function changeFiltre(){
                 <td class="cell">
                     `+ parseInt(i+1) + `
                 </td>
-                <td class="logo">
+                <td class="logo" val="`+tab[i]['team']+`">
                     <img width="60px" height="60px" alt="`+tab[i]['team']+`" src="`+tab[i]['logo']+`" />
                 </td>
                 <td class="cell">
@@ -68,5 +79,5 @@ function changeFiltre(){
         }
         //Les backticks `` permettent d'écrire des string sur plusieurs lignes
     }
-    document.getElementById("tableau").innerHTML = rows;
+    document.querySelector("#tableau").innerHTML = rows;
 }
